@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix — Смотрите фильмы и сериалы</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="hero">
+
+        <header class="header">
+            <a href="#" class="logo">
+                <img src="./images/logo.png.png" alt="Netflix">
+            </a>
+
+            <div class="header-buttons">
+                <select>
+                    <option>Русский</option>
+                    <option>English</option>
+                </select>
+
+                <button class="login" id="signInBtn">Войти</button>
+            </div>
+        </header>
+
+        <div class="content">
+            <h1>
+                Фильмы, сериалы и<br>
+                многое другое без<br>
+                ограничений
+            </h1>
+
+            <p class="price">
+                От 7,99 €. Отменить подписку можно в любое время.
+            </p>
+
+            <p class="description">
+                Готовы смотреть? Введите адрес электронной почты,
+                чтобы оформить или возобновить подписку.
+            </p>
+
+            <form id="signupForm">
+                <div class="email-box">
+                    <input type="email" id="email" placeholder=" " required>
+                    <label for="email">Адрес электронной почты</label>
+                    <small id="emailError"></small>
+                </div>
+
+                <button type="submit" class="start">
+                    Начать смотреть <span>›</span>
+                </button>
+            </form>
+
+            <p id="successMessage"></p>
+        </div>
+
+    </main>
+
+    <section class="bottom">
+        <h2>Смотрите где угодно</h2>
+        <p>
+            Смотрите любимые фильмы и сериалы
+            на телевизоре, компьютере и телефоне.
+        </p>
+    </section>
+
+    <footer>
+        © 2026 Netflix. Учебный проект.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
